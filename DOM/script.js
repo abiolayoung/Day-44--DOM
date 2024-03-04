@@ -63,8 +63,31 @@ document.body is the object representing the body tag.*/
 // element.closest method-  the method element.closest look for the nearest ancestor that matches the css selector
 // the method goes of by checking each of parents
 
-let chapter = document.querySelector('.chapter')
+// let chapter = document.querySelector('.chapter')
 
-alert(chapter.closest('.book')) // UL - It returns the immediate parent of the chapter class which is book class.
-alert(chapter.closest('.contents')) // DIV - this will output the div item
-alert(chapter.closest('h1')) // the is will print null becuase h1 does not have an ancestor- it is alone
+// alert(chapter.closest('.book')) // UL - It returns the immediate parent of the chapter class which is book class.
+// alert(chapter.closest('.contents')) // DIV - this will output the div item
+// alert(chapter.closest('h1')) // the is will print null becuase h1 does not have an ancestor- it is alone
+
+
+//DOM NODE PROPERTIES
+/*node is an abstract class serving as a base for the dom node, it contain the core node which are
+parentNode, childNode, nextSibling, previousSibling etc.
+
+document- serves as a global entry point to the DOM.
+characterData- the string in an element or comments
+Element- divs or html elements
+
+
+HTMLBodyElement- the html body
+HTMLAnchorElement- the <a href="..."> the anchor element
+HTMLInputElement - <input type="date"> the input element*/
+
+// alert(document.body.constructor.name)
+// alert(document.body instanceof HTMLBodyElement)
+
+let elem = document.body;
+// alert(elem.nodeType)
+// alert(elem.firstChild.nodeType)
+
+alert(document.nodeType)
